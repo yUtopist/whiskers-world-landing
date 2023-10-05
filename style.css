@@ -47,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--clr-background);
     background-image: url('./images/hero_background.jpg');
     background-size: cover;
@@ -69,4 +69,12 @@ body {
         
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1{
+        margin-block: auto;
+        margin-inline: 3rem;
+        font-size: 5rem;
+    }
 }
