@@ -1,80 +1,80 @@
 /* importing font from the folder */
 @font-face {
-    font-family: 'Fancy';
-    src: url('./flicker.ttf');
+  font-family: "Fancy";
+  src: url("./flicker.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
-    --clr-background: #F9F4F1;
+  --clr-background: #f9f4f1;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--clr-background);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-background);
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background-color: var(--clr-background);
+  background-color: var(--clr-background);
 }
 
 .navigation__menu {
-    display: flex;
+  display: flex;
 }
 
 .navigation__menu a {
-    height: 100%;
-    padding: 1.5rem;
+  height: 100%;
+  padding: 1.5rem;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height: 100dvh;
-    background-color: var(--clr-background);
-    background-image: url('./images/hero_background.jpg');
-    background-size: cover;
-    background-position: bottom;
+  height: 100dvh;
+  background-color: var(--clr-background);
+  background-image: url("./images/hero_background.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .hero h1 {
-    margin-bottom: 20dvh;
-    margin-inline: 5rem;
+  margin-bottom: 20dvh;
+  margin-inline: 5rem;
 
-    font-family: 'Fancy', sans-serif;
-    font-size: 5.6rem;
-    font-weight: 400;
-    
-    letter-spacing: 1px;
-    line-height: .8;
+  font-family: "Fancy", sans-serif;
+  font-size: 5.6rem;
+  font-weight: 400;
 
-    color: #ffffff;
-        
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
+  letter-spacing: 1px;
+  line-height: 0.8;
+
+  color: #ffffff;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-    .hero h1{
-        margin-block: auto;
-        margin-inline: 3rem;
-        font-size: 4rem;
-    }
+  .hero h1 {
+    margin-block: auto;
+    margin-inline: 3rem;
+    font-size: 4rem;
+  }
 }
